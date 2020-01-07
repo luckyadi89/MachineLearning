@@ -46,4 +46,7 @@ plt.plot(r.history['accuracy'], label = 'accuracy')
 plt.plot(r.history['val_accuracy'], label = 'val_accuracy')
 plt.legend()
 
-
+y_pred = model.predict_classes(X_test)
+y_pred
+accuracy = accuracy_score(y_test,y_pred)
+print(accuracy)
